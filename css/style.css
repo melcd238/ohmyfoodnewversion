@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+@media only screen and (max-width: 599px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: white; }
+    header h1 {
+      font-family: "Shrikhand", cursive;
+      font-size: 2rem; } }
+
+@media only screen and (max-width: 599px) {
+  .localisation {
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; } }
+
+@media only screen and (max-width: 599px) {
+  .section-presentation {
+    background-color: #DCDCDC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    font-family: "Roboto", sans-serif; }
+    .section-presentation h2 {
+      font-size: 1.4rem; }
+    .section-presentation p {
+      font-size: 1rem;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 5px; }
+    .section-presentation .bouton {
+      box-shadow: white 4px 2px 10px, white 2px 4px 15px;
+      background: linear-gradient(160deg, #FF79DA 0%, #9356DC 100%);
+      border-radius: 20px;
+      width: 14rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; }
+      .section-presentation .bouton a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem; } }
+
+@media only screen and (max-width: 599px) {
+  .section-fonctionnement {
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Roboto", sans-serif; }
+    .section-fonctionnement ol li {
+      border-radius: 20px;
+      box-shadow: #DCDCDC 4px 2px 4px, #DCDCDC 2px 4px 6px;
+      margin: 60px 0px;
+      height: 40px;
+      padding-top: 20px;
+      padding-left: 30px;
+      background-color: #DCDCDC;
+      display: flex; }
+    .section-fonctionnement ol .puce-color {
+      background-color: rgba(247, 214, 247, 0.22); }
+    .section-fonctionnement li p {
+      margin-left: 60px;
+      margin-top: 0px;
+      font-size: 1.2rem; } }

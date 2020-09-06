@@ -1,0 +1,102 @@
+@import "general";
+@import "responsive";
+@import "variables";
+
+
+
+body{
+  @include style-general;
+}
+
+header{
+    @include responsive (small){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background-color: white;
+      h1{
+        font-family: $font-family-logo-title;
+        font-size: 2rem;
+      }
+    }
+}
+.localisation{
+  @include responsive(small){
+    background-color: whitesmoke;
+    font-family: $font-family-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+  }
+}
+.section-presentation{
+  @include responsive (small){
+    background-color:#DCDCDC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+    font-family: $font-family-text;
+    h2{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 1rem;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 5px;
+      
+    }
+    .bouton{
+      box-shadow: white 4px 2px 10px, white 2px 4px 15px;
+      background: linear-gradient(160deg, $secondary-color 0%, $primary-color 100%) ;
+      border-radius: 20px;
+      width: 14rem;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+      }
+    }
+  
+  }
+}
+.section-fonctionnement{
+  @include responsive(small){
+    height: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: $font-family-text;
+  ol li{
+    border-radius: 20px;
+    box-shadow: #DCDCDC 4px 2px 4px, #DCDCDC 2px 4px 6px;
+    margin: 60px 0px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+    background-color:#DCDCDC;
+    display: flex;
+    
+    
+    }
+  ol .puce-color{
+    background-color:rgba(247, 214, 247, 0.22); ;
+  }
+  li p{
+    margin-left: 60px;
+    margin-top: 0px;
+    font-size: 1.2rem;
+    
+  }
+}
+  }
+  
