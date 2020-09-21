@@ -15,6 +15,7 @@ header{
       align-items: center;
       height: 60px;
       background-color: white;
+      
       h1{
         font-family: $font-family-logo-title;
         font-size: 2rem;
@@ -166,6 +167,24 @@ header{
    
   }
   
+}
+footer{
+  @include responsive(small){
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    background-color: black;
+    color: blanchedalmond;
+    h3{
+      font-family: $font-family-logo-title;
+    }
+    a{
+      text-decoration: none;
+      color: blanchedalmond;
+      font-family: $font-family-text;
+      margin-bottom: 8px;
+    }
+  }
 }
 
   
