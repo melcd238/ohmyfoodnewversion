@@ -99,4 +99,73 @@ header{
   }
 }
   }
+.section-restaurant{
+  @include responsive (small){
+    background-color: #DCDCDC;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: $font-family-text;
+    .restau{
+      margin-bottom: 30px;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .photo{
+      height: 200px;
+      border-radius: 20px 20px 0px 0px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10px;
+       }
+    .photo-la-palette{
+      background-image: url(../img/palette.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    }
+    .photo-la-note{
+      background-image: url(../img/enchante.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+    }
+    .photo-a-la-france{
+      background-image: url(../img/bastille.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+    }
+    .photo-le-delice{
+      background-image: url(../img/gourmand.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+    }
+    .new{
+      background-color: $third-color;
+      color: rgb(6, 102, 43);
+      width: 80px;
+      height: 25px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 10px 10px;
+      
+      
+    }
+    .name{
+      height: 70px;
+      background-color: ivory;
+      border-radius: 0px 0px 20px 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+   
+  }
+  
+}
+
   
