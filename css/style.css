@@ -59,6 +59,24 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     font-family: "Roboto", sans-serif; }
+    .section-fonctionnement ol {
+      list-style: none;
+      counter-reset: li; }
+    .section-fonctionnement li::before {
+      content: counter(li);
+      color: floralwhite;
+      font-size: 1.2em;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.4em;
+      margin-left: -2.4em;
+      margin-top: -0.2em;
+      border: blueviolet 1px solid;
+      text-align: center;
+      border-radius: 50% 50%;
+      background-color: blueviolet; }
+    .section-fonctionnement li {
+      counter-increment: li; }
     .section-fonctionnement ol li {
       border-radius: 20px;
       box-shadow: #DCDCDC 4px 2px 4px, #DCDCDC 2px 4px 6px;
@@ -73,7 +91,10 @@ body {
     .section-fonctionnement li p {
       margin-left: 60px;
       margin-top: 0px;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+    .section-fonctionnement li .icon-fct {
+      margin-left: 1.5em;
+      margin-top: -0.2em; } }
 
 @media only screen and (max-width: 599px) {
   .section-restaurant {

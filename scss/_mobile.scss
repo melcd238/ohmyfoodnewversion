@@ -77,6 +77,27 @@ header{
   padding-left: 20px;
   padding-right: 20px;
   font-family: $font-family-text;
+  ol{
+    list-style: none;
+    counter-reset: li;
+  }
+  li::before{
+    content: counter(li);
+    color: floralwhite;
+    font-size: 1.2em;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.4em;
+    margin-left: -2.4em;
+    margin-top: -0.2em;
+    border: blueviolet 1px solid;
+    text-align: center;
+    border-radius: 50% 50%;
+    background-color: blueviolet;
+   }
+  li{
+    counter-increment: li;
+  }
   ol li{
     border-radius: 20px;
     box-shadow: #DCDCDC 4px 2px 4px, #DCDCDC 2px 4px 6px;
@@ -86,6 +107,7 @@ header{
     padding-left: 30px;
     background-color:#DCDCDC;
     display: flex;
+    
     
     
     }
@@ -98,8 +120,14 @@ header{
     font-size: 1.2rem;
     
   }
-}
+  li .icon-fct{
+    margin-left: 1.5em;
+    margin-top: -0.2em;
   }
+  
+  }
+}
+  
 .section-restaurant{
   @include responsive (small){
     background-color: #DCDCDC;
