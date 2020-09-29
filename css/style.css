@@ -56,8 +56,8 @@ body {
 @media only screen and (max-width: 599px) {
   .section-fonctionnement {
     height: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
     font-family: "Roboto", sans-serif; }
     .section-fonctionnement ol {
       list-style: none;
@@ -89,11 +89,11 @@ body {
     .section-fonctionnement ol .puce-color {
       background-color: rgba(247, 214, 247, 0.22); }
     .section-fonctionnement li p {
-      margin-left: 60px;
+      margin-left: 20px;
       margin-top: 0px;
-      font-size: 1.2rem; }
+      font-size: 1rem; }
     .section-fonctionnement li .icon-fct {
-      margin-left: 1.5em;
+      margin-left: 1em;
       margin-top: -0.2em; } }
 
 @media only screen and (max-width: 599px) {
@@ -104,6 +104,9 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     font-family: "Roboto", sans-serif; }
+    .section-restaurant a {
+      text-decoration: none;
+      color: black; }
     .section-restaurant .restau {
       margin-bottom: 30px;
       height: 270px;
@@ -148,7 +151,9 @@ body {
       background-color: ivory;
       border-radius: 0px 0px 20px 20px;
       display: flex;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+      .section-restaurant .name .icon-heart {
+        padding-top: 20px; } }
 
 @media only screen and (max-width: 599px) {
   footer {

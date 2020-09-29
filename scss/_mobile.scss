@@ -74,8 +74,8 @@ header{
 .section-fonctionnement{
   @include responsive(small){
     height: 500px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
   font-family: $font-family-text;
   ol{
     list-style: none;
@@ -115,13 +115,14 @@ header{
     background-color:rgba(247, 214, 247, 0.22); ;
   }
   li p{
-    margin-left: 60px;
+    margin-left: 20px;
     margin-top: 0px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    
     
   }
   li .icon-fct{
-    margin-left: 1.5em;
+    margin-left: 1em;
     margin-top: -0.2em;
   }
   
@@ -136,6 +137,10 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
     font-family: $font-family-text;
+    a{
+      text-decoration: none;
+      color: black;
+    }
     .restau{
       margin-bottom: 30px;
       height: 270px;
@@ -191,6 +196,9 @@ header{
       border-radius: 0px 0px 20px 20px;
       display: flex;
       justify-content: space-around;
+      .icon-heart{
+        padding-top: 20px;
+      }
     }
    
   }
