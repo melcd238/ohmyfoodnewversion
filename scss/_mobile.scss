@@ -7,6 +7,47 @@
 body{
   @include style-general;
 }
+h1, h2{
+  font-family: $font-family-logo-title;
+}
+p, h3 {
+  font-family: $font-family-text;
+}
+h2{
+  font-size: 2em;
+}
+h3, .outline{
+  font-weight: lighter;
+}
+h3{
+  margin-left: 30px;
+  position: relative;
+}
+h3::before{
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: $third-color;
+  position: absolute;
+  margin-top: 20px;
+}
+li{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px 10px;
+  margin-left: -10px;
+  margin-right: 40px;
+  
+}
+.recipe{
+  width: 80%;
+}
+.price{
+  padding-top: 20px;
+}
 
 header{
     @include responsive (small){
@@ -17,8 +58,7 @@ header{
       background-color: white;
       
       h1{
-        font-family: $font-family-logo-title;
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
 }
@@ -198,8 +238,11 @@ footer{
     padding-left: 30px;
     background-color: black;
     color: blanchedalmond;
-    h3{
+    .titre-footer{
       font-family: $font-family-logo-title;
+    }
+    .titre-footer::before{
+         width: 0%;
     }
     a{
       text-decoration: none;
@@ -233,7 +276,11 @@ footer{
   }
 }
 .bouton-menu{
-  @include bouton-menu
+  @include bouton-menu;
+  margin-top: 40px;
+  margin: auto;
+  
+  
 }
 main{
   @include responsive(small){
@@ -241,6 +288,13 @@ main{
     margin-top: -70px;
     border-radius: 20px 20px 0px 0px;
     padding-bottom: 10px;
+    .titre{
+      display: flex;
+      justify-content: space-around;
+      .icon-heart-titre{
+        padding-top: 35px;
+      }
+    }
     
   }
   

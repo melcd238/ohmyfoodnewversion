@@ -2,6 +2,46 @@ body {
   margin: 0;
   padding: 0; }
 
+h1, h2 {
+  font-family: "Shrikhand", cursive; }
+
+p, h3 {
+  font-family: "Roboto", sans-serif; }
+
+h2 {
+  font-size: 2em; }
+
+h3, .outline {
+  font-weight: lighter; }
+
+h3 {
+  margin-left: 30px;
+  position: relative; }
+
+h3::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  margin-top: 20px; }
+
+li {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px 10px;
+  margin-left: -10px;
+  margin-right: 40px; }
+
+.recipe {
+  width: 80%; }
+
+.price {
+  padding-top: 20px; }
+
 @media only screen and (max-width: 599px) {
   header {
     display: flex;
@@ -10,8 +50,7 @@ body {
     height: 60px;
     background-color: white; }
     header h1 {
-      font-family: "Shrikhand", cursive;
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
 
 @media only screen and (max-width: 599px) {
   .localisation {
@@ -162,8 +201,10 @@ body {
     padding-left: 30px;
     background-color: black;
     color: blanchedalmond; }
-    footer h3 {
+    footer .titre-footer {
       font-family: "Shrikhand", cursive; }
+    footer .titre-footer::before {
+      width: 0%; }
     footer a {
       text-decoration: none;
       color: blanchedalmond;
@@ -195,7 +236,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin: auto; }
   .bouton-menu a {
     text-decoration: none;
     color: white;
@@ -206,4 +249,9 @@ body {
     background-color: #DCDCDC;
     margin-top: -70px;
     border-radius: 20px 20px 0px 0px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+    main .titre {
+      display: flex;
+      justify-content: space-around; }
+      main .titre .icon-heart-titre {
+        padding-top: 35px; } }
