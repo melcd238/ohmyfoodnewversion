@@ -284,6 +284,15 @@ footer{
     height: 280px;
     }
 }
+.banner-bastille{
+  @include responsive(small){
+    background-image: url(../img/bastille.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 280px;
+    }
+}
 .bouton-menu{
   @include bouton-menu;
   margin-top: 40px;
