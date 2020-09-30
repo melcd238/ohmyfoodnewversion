@@ -53,20 +53,7 @@ header{
       
     }
     .bouton{
-      box-shadow: white 4px 2px 10px, white 2px 4px 15px;
-      background: linear-gradient(160deg, $secondary-color 0%, $primary-color 100%) ;
-      border-radius: 20px;
-      width: 14rem;
-      height: 3rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-      a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.1rem;
-      }
+     @include bouton-menu
     }
   
   }
@@ -75,7 +62,7 @@ header{
   @include responsive(small){
     height: 500px;
   padding-left: 10px;
-  padding-right: 30px;
+  padding-right: 40px;
   font-family: $font-family-text;
   ol{
     list-style: none;
@@ -86,8 +73,8 @@ header{
     color: floralwhite;
     font-size: 1.2em;
     display: inline-block;
-    width: 1.5em;
-    height: 1.4em;
+    width: 1.3em;
+    height: 1.3em;
     margin-left: -2.4em;
     margin-top: -0.2em;
     border: blueviolet 1px solid;
@@ -222,5 +209,42 @@ footer{
     }
   }
 }
+// Menu la palette du goût
+.menu-header{
+  @include responsive(small){
+      a{
+        text-decoration: none;
+        color: black;   
+      }
+      h1{
+        text-align: center;
+        width: 80%;
+      }
+  }
+  
+}
+.banner-palette{
+  @include responsive(small){
+  background-image: url(../img/palette.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  height: 280px;
+  }
+}
+.bouton-menu{
+  @include bouton-menu
+}
+main{
+  @include responsive(small){
+    background-color: #DCDCDC;
+    margin-top: -70px;
+    border-radius: 20px 20px 0px 0px;
+    padding-bottom: 10px;
+    
+  }
+  
+}
+
 
   
