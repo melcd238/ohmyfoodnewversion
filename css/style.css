@@ -227,6 +227,14 @@ li {
     background-size: 100% auto;
     height: 280px; } }
 
+@media only screen and (max-width: 599px) {
+  .banner-note {
+    background-image: url(../img/enchante.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 280px; } }
+
 .bouton-menu {
   box-shadow: white 4px 2px 10px, white 2px 4px 15px;
   background: linear-gradient(160deg, #FF79DA 0%, #9356DC 100%);
