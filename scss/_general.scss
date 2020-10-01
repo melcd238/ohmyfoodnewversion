@@ -1,6 +1,18 @@
 @mixin style-general {
         margin: 0;
         padding: 0;
+        h1, h2{
+          font-family: $font-family-logo-title;
+        }
+        p, h3 {
+          font-family: $font-family-text;
+        }
+        h2{
+          font-size: 2em;
+        }
+        h3, .outline{
+          font-weight: lighter;
+        }
 }
 
 @mixin bouton-menu{

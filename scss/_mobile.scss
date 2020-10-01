@@ -7,47 +7,7 @@
 body{
   @include style-general;
 }
-h1, h2{
-  font-family: $font-family-logo-title;
-}
-p, h3 {
-  font-family: $font-family-text;
-}
-h2{
-  font-size: 2em;
-}
-h3, .outline{
-  font-weight: lighter;
-}
-h3{
-  margin-left: 30px;
-  position: relative;
-}
-h3::before{
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: $third-color;
-  position: absolute;
-  margin-top: 20px;
-}
-li{
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid white;
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 10px 10px;
-  margin-left: -10px;
-  margin-right: 40px;
-  
-}
-.recipe{
-  width: 80%;
-}
-.price{
-  padding-top: 20px;
-}
+
 
 header{
     @include responsive (small){
@@ -84,6 +44,7 @@ header{
     font-family: $font-family-text;
     h2{
       font-size: 1.4rem;
+      text-align: center;
     }
     p{
       font-size: 1rem;
@@ -293,6 +254,15 @@ footer{
     height: 280px;
     }
 }
+.banner-papilles{
+  @include responsive(small){
+    background-image: url(../img/gourmand.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 280px;
+    }
+}
 .bouton-menu{
   @include bouton-menu;
   margin-top: 40px;
@@ -312,6 +282,35 @@ main{
       .icon-heart-titre{
         padding-top: 35px;
       }
+    }
+    h3{
+      margin-left: 30px;
+      position: relative;
+    }
+    h3::before{
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color: $third-color;
+      position: absolute;
+      margin-top: 20px;
+    }
+    li{
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 10px 10px;
+      margin-left: -10px;
+      margin-right: 40px;
+      
+    }
+    .recipe{
+      width: 80%;
+    }
+    .price{
+      padding-top: 20px;
     }
     
   }

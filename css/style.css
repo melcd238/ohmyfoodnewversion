@@ -1,46 +1,14 @@
 body {
   margin: 0;
   padding: 0; }
-
-h1, h2 {
-  font-family: "Shrikhand", cursive; }
-
-p, h3 {
-  font-family: "Roboto", sans-serif; }
-
-h2 {
-  font-size: 2em; }
-
-h3, .outline {
-  font-weight: lighter; }
-
-h3 {
-  margin-left: 30px;
-  position: relative; }
-
-h3::before {
-  content: "";
-  width: 40px;
-  height: 3px;
-  background-color: #99E2D0;
-  position: absolute;
-  margin-top: 20px; }
-
-li {
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid white;
-  margin-top: 20px;
-  background-color: white;
-  border-radius: 10px 10px;
-  margin-left: -10px;
-  margin-right: 40px; }
-
-.recipe {
-  width: 80%; }
-
-.price {
-  padding-top: 20px; }
+  body h1, body h2 {
+    font-family: "Shrikhand", cursive; }
+  body p, body h3 {
+    font-family: "Roboto", sans-serif; }
+  body h2 {
+    font-size: 2em; }
+  body h3, body .outline {
+    font-weight: lighter; }
 
 @media only screen and (max-width: 599px) {
   header {
@@ -71,7 +39,8 @@ li {
     height: 250px;
     font-family: "Roboto", sans-serif; }
     .section-presentation h2 {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      text-align: center; }
     .section-presentation p {
       font-size: 1rem;
       font-weight: 300;
@@ -243,6 +212,14 @@ li {
     background-size: 100% auto;
     height: 280px; } }
 
+@media only screen and (max-width: 599px) {
+  .banner-papilles {
+    background-image: url(../img/gourmand.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 280px; } }
+
 .bouton-menu {
   box-shadow: white 4px 2px 10px, white 2px 4px 15px;
   background: linear-gradient(160deg, #FF79DA 0%, #9356DC 100%);
@@ -270,4 +247,27 @@ li {
       display: flex;
       justify-content: space-around; }
       main .titre .icon-heart-titre {
-        padding-top: 35px; } }
+        padding-top: 35px; }
+    main h3 {
+      margin-left: 30px;
+      position: relative; }
+    main h3::before {
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color: #99E2D0;
+      position: absolute;
+      margin-top: 20px; }
+    main li {
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 10px 10px;
+      margin-left: -10px;
+      margin-right: 40px; }
+    main .recipe {
+      width: 80%; }
+    main .price {
+      padding-top: 20px; } }
