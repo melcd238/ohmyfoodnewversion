@@ -62,7 +62,7 @@ header{
 .section-fonctionnement{
   @include responsive(small){
     height: 500px;
-  padding-left: 10px;
+  padding-left: 40px;
   padding-right: 40px;
   font-family: $font-family-text;
   ol{
